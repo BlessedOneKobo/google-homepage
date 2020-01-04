@@ -62,5 +62,57 @@
 
 #main {
     clear: both;
-    margin-top: 36px;
+    margin: 105px auto 0 auto;
+    width: 720px;
+}
+
+#main img {
+    display: block;
+    margin: 0 auto;
+}
+
+#main form {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 500px;
+    padding: 10px 40px;
+    margin: 28px 0;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    font-size: 1em;
+    background-color: #fff;
+}
+
+input[type="text"]:hover {
+    box-shadow: 1px 1px 8px #ccc;
+}
+
+.submit {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.submit button {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #5a5a5a;
+    padding: 8px 16px;
+    margin-right: 6px;
+    font-size: 0.85em;
+}
+
+.submit button:hover {
+    border-color: #ccc;
+    background-color: #fafafa;
+    background-image: linear-gradient(#fff, #f1f1f1);
+    color: #404040;
+    cursor: pointer;
+    box-shadow: 0 1px 1px #ddd;
+}
+
+.submit button:active {
+    border-color: rgb(131, 173, 253);
 }
