@@ -1,9 +1,18 @@
+a {
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #container {
     width: 100%;
     margin: 0 auto;
 }
 
-#navigation {
+#navigation, #footer {
     margin: 0;
     padding: 0;
     overflow: auto;
@@ -11,19 +20,13 @@
     padding-bottom: 4px;
 }
 
-#navigation li {
+#navigation li, #footer li {
     display: inline;
 }
 
 #navigation li a {
     color: rgb(44, 44, 44);
-    text-decoration: none;
     margin-right: 18px;
-}
-
-#navigation li a:hover {
-    text-decoration: underline;
-    cursor: pointer;
 }
 
 .left-panel, .right-panel {
@@ -115,4 +118,30 @@ input[type="text"]:hover {
 
 .submit button:active {
     border-color: rgb(131, 173, 253);
+}
+
+#footer {
+    background-color: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.1em;
+    border-top: 1px solid #ddd;
+}
+
+#footer li a {
+    color: #5a5a5a;
+}
+
+#footer .left-panel li a {
+    margin-right: 24px;
+}
+
+#footer .right-panel li a {
+    margin-left: 24px;
+}
+
+#footer .left-panel, #footer .right-panel {
+    margin-top: 16px;
+    margin-bottom: 10px;
 }
