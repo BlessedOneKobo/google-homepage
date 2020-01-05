@@ -1,3 +1,4 @@
+/* General */
 a {
     text-decoration: none;
 }
@@ -12,6 +13,7 @@ li a:hover {
     margin: 0 auto;
 }
 
+/* Header navigation */
 #navigation, #footer {
     margin: 0;
     padding: 0;
@@ -46,7 +48,7 @@ li a:hover {
     float: right;
 }
 
-.right-panel ul, .right-panel table, .right-panel button {
+.right-panel ul, .right-panel button {
     display: inline;
 }
 
@@ -63,6 +65,8 @@ li a:hover {
     box-shadow: 0 2px 2px #ddd;
 }
 
+/* Center content */
+
 #main {
     clear: both;
     margin: 105px auto 0 auto;
@@ -78,6 +82,7 @@ li a:hover {
     text-align: center;
 }
 
+/* Search box */
 input[type="text"] {
     width: 500px;
     padding: 10px 40px;
@@ -92,6 +97,7 @@ input[type="text"]:hover {
     box-shadow: 1px 1px 8px #ccc;
 }
 
+/* Submit button */
 .submit {
     width: 400px;
     margin: 0 auto;
@@ -120,6 +126,7 @@ input[type="text"]:hover {
     border-color: rgb(131, 173, 253);
 }
 
+/* Footer */
 #footer {
     background-color: #f1f1f1;
     position: absolute;
