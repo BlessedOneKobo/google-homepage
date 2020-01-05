@@ -134,13 +134,17 @@ li a:hover {
 
 /* Search box */
 input[type="text"] {
-    width: 500px;
-    padding: 10px 40px;
+    width: 492px;
+    padding: 10px 40px 10px 48px;
     margin: 28px 0;
     border: 1px solid #ddd;
     border-radius: 24px;
     font-size: 1em;
     background-color: #fff;
+    background-image: url("../images/magnifying-glass.png");
+    background-position: 18px center;
+    background-size: 14px;
+    background-repeat: no-repeat;
 }
 
 input[type="text"]:hover {
