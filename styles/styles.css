@@ -65,7 +65,8 @@ li a:hover {
 
 /* Header navigation */
 #navigation, #footer {
-    margin: 0;
+    margin: 0 auto;
+    min-width: 1200px;
     padding: 0;
     overflow: auto;
     font-family: sans-serif;
@@ -86,15 +87,21 @@ li a:hover {
     font-size: 0.75em;
 }
 
+#navigation .left-panel {
+    margin-top: 24px;
+}
+
+#navigation .right-panel {
+    margin-top: 16px;
+}
+
 .left-panel {
     margin-left: 28px;
-    margin-top: 24px;
     float: left;
 }
 
 .right-panel {
     margin-right: 28px;
-    margin-top: 16px;
     float: right;
 }
 
@@ -188,7 +195,10 @@ input[type="text"]:hover {
     width: 100%;
     font-size: 1.1em;
     border-top: 1px solid #ddd;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
+
 
 #footer li a {
     color: #5a5a5a;
@@ -200,9 +210,4 @@ input[type="text"]:hover {
 
 #footer .right-panel li a {
     margin-left: 24px;
-}
-
-#footer .left-panel, #footer .right-panel {
-    margin-top: 16px;
-    margin-bottom: 10px;
 }
