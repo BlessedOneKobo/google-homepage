@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+    line-height: 1.5;
+}
+
+header {
+    overflow: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+a {
+    text-decoration: none;
+}
+
+.options-bar {
+    overflow: auto;
+}
+
+/* Container */
+.container {
+    font-family: sans-serif;
+    min-width: 1200px;
+}
+
+/* Top bar */
+.top-bar img, .top-bar button {
+    cursor: pointer;
+}
+.top-bar img, .top-bar input {
+    float: left;
+}
+
+.top-bar {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 1.2em;
+}
+
+.logo {
+    display: block;
+}
+.top-bar img { /* Logo */
+    width: 92px;
+    height: 30px;
+    margin-top: .55em;
+    margin-right: 2.25em;
+}
+
+.top-bar input { /* Search bar */
+	padding: 14px 20px 14px 20px;
+	width: 640px;
+    
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    background-color: #fff;
+    background-image: url("../images/magnifying-glass.png");
+    background-position: 600px center;
+    background-size: 14px;
+    background-repeat: no-repeat;
+    font-size: 1em;
+}
+
+.top-bar button { /* Sign in button */
+    float: right;
+    width: 92px;
+    height: 35px;
+	color: #fff;
+	background-color: rgb(74, 74, 255);
+	border: 1px solid rgb(74, 74, 255);
+	border-radius: 4px;
+    font-size: .9em;
+    margin-top: .4em;
+}
+.top-bar button:hover {
+    box-shadow: 0 0 2px rgb(182, 180, 255);
+    background-color: rgb(79, 79, 255);
+}
+
+/* Options bar */
+.options-bar {
+    clear: both;
+    width: 640px;
+    margin-left: 165px;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.options {
+    display: inline-block;
+}
+.options:hover {
+    cursor: pointer;
+}
+.options li {
+    display: inline;
+}
+.options li a {
+    text-align: right;;
+    display: inline-block;
+    padding: 12px 14px 14px 20px;;
+    color: #555;
+    font-size: .8em;
+    border-bottom: 4px solid #fff;
+}
+.options li a:hover {
+    color: #00f;
+    border-color: #00f;
+}
+.search {
+    float: left;
+}
+.settings {
+    float: right;
+}
+
+/* Search results */
+.results {
+    clear: both;
+    margin-top: 12px;
+    width: 640px;
+    color: #444;
+    font-size: .9em;
+}
+.results .summary {
+    font-size: 0.95em;
+    color: #666;
+    margin-left: 165px;
+}
+.result-list > li {
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 165px;
+}
+.result-list a, .result-list .link {
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+.result-list .address {
+    color: rgb(24, 107, 0);
+}
+.result-list .title {
+    font-size: 1.4em;
+    color: rgb(17, 17, 141);
+}
+.result-list a:hover .title {
+    text-decoration: underline;
+}
+
+/* Feedback */
+.result-list > li:nth-of-type(2) {
+    margin-left: 150px;
+    margin-right: auto;
+    width: 100%;
+}
+.feedback {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #222;
+    font-size: 1.2em;
+}
+.feedback li {
+    border-bottom: 1px solid #ccc;
+    padding: 14px 12px;
+    font-size: .9em;
+}
+.feedback .heading {
+    font-size: 1.16em;
+}
+.feedback li:hover {
+    cursor: pointer;
+}
+.feedback li:last-of-type {
+    border-width: 0;
+}
+.feedback+.footer {
+    font-size: 0.8em;
+    font-style: italic;
+    display: inline-block;
+    margin-top: 8px;
+    width: 98%;
+    text-align: right;
+    color: #777;
+}
+
+/* Related */
+.related {
+    width: 500px;
+    margin-left: 165px;
+    margin-top: 24px;
+}
+.related ul {
+    display: inline-block;
+    margin-right: 28px;
+}
+.related h2 {
+    font-size: 1.4em;
+    color: #111;
+    margin-bottom: 24px;
+}
+.related li {
+    margin-bottom: .8em;
+    font-weight: bold;
+}
+.related a {
+    color: rgb(30, 30, 163);
+}
+.related a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    font-size: .9em;
+    border-top: 1px solid #ddd;
+    margin-top: 24px;
+}
+footer, footer a {
+    color: #555;
+}
+footer li {
+    display: inline;
+}
+footer a {
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+footer a:hover {
+    color: #333;
+}
+footer .location {
+    border-bottom: 1px solid #d3d3d3;
+}
+footer .country {
+    border-right: 1px solid #aaa;
+    padding-right: 10px;
+}
+footer .details {
+    margin-left: 12px;
+}
+footer .help a {
+    padding-right: 26px;;
+}
+footer .details strong {
+    font-weight: bold;
+}
+footer .country, footer .help {
+    margin-left: 165px;
+}
